@@ -1,0 +1,27 @@
+
+body{ background-color: #cc99ff;
+      box-shadow: 2px 2px green;    
+}
+h1{ color: black;
+    text-shadow: 1.5px 1.5px 1.5px yellow;
+    text-align:center;
+}
+.square {
+        width:100px;
+        height: 100px;
+        background-color:blue;
+        margin:auto;
+}
+
+#circle{
+    color:darkred;
+    font-size: 40px;
+}
+
+.container{
+    background: linear-gradient(to right,#33cc33,#ff66cc);
+}
+
+h2{
+    color:red;
+}
