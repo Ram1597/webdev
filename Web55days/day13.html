@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selctors</title>
     <style>
-            div.parent div{
-                color:blue;
-            }
-            div.parent div:nth-child(2){
-                color:red;
-            }
+           div.parent{
+               background-color: black;
+               min-height:200px;
+           }
+           div.child{
+               background-color:cyan;
+               
+               height: 100px;
+               width:100px;
+               border-radius: 50%;
+               transition-duration: 0.5s;
+               transition-timing-function: linear;
+           }
+           div.child:hover{
+               background-color: red;
+               transform: scale(2);
+           }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div>It Is A Div</div>
-        <div>Hello</div>
-        <div>It Is Also A Div</div>
 
-    </div>
+<div class="parent">
+    <div class="child"> </div>
+</div>
+
 </body>
 </html>
