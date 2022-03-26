@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
     <style>
-        div{
-            background-color: yellow;
-            font-size: 1rem;
-        }
-        @media(max-width:700px){
-            div{
-                background-color: brown;
-            }
-        }
-        @media(max-width:500px){
-            div{
-                background-color:cyan;
-                font-size: 1.5rem;
-            }
+        div.parent{
+            background-color: black;
+            display: flex;
+            align-items:stretch;
+            height:100vh;
         }
 
+        div.sidebar{
+            background-color:red;
+            flex-basis: 30%;
+            
+        }
+        div.child{
+
+        background-color: cyan;
+        flex-basis: 70%;
+        }
+
+        @media(max-width:550px) {
+            div.sidebar{
+            
+            animation:1s move linear infinite;  
+        }
+
+        div.child{
+            
+            flex-basis: 100%;
+        }
+            
+        }
         
+
+         @keyframes move{
+             0%{
+                flex-basis:0%;
+             }
+             100%{
+                 flex-basis: 30%;
+             }
+             
+         }
+        
+
     </style>
 
 </head>
 <body>
 
-    <div>
-        <h2>This Is Media Query</h2>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, praesentium.
+    <div class="parent">
+        
+        <div class="sidebar"></div>
+        <div class="child"></div>
     </div>
     
 </body>
