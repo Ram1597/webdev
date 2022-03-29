@@ -1,5 +1,6 @@
-console.log("Hello World")
-console.warn("Hello Warn")
-console.log(typeof 1)
+var arr=[1,2,3,'arr']
+console.log(arr)
+console.log(arr.length)
 
-console.log(typeof true)
+arr.push(5)
+console.log(arr)
