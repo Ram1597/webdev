@@ -16,9 +16,9 @@ for(var i=0;i<arr.length;i++)
     var element=document.createElement('li')
     var textbox=document.createTextNode(arr[i])
     element.appendChild(textbox)
-    list.appendChild(element)
-
+list.appendChild(element)
 }
+
 
 
 
