@@ -5,11 +5,8 @@ var body=document.querySelector('body')
 
 
 const callbackfunc = (event) => {
-   // const inputvalue=input.value
-    const element=document.createElement('li')
-    const textbox=document.createTextNode(input.value)
-    element.appendChild(textbox)
-    list.appendChild(element)
+        body.classList.toggle('dark')
+
 
 }
 
