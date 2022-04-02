@@ -10,6 +10,7 @@
 // console.log(head.classList)
 
 var list=document.querySelector('ul')
+console.log(list)
 var arr=['Two','Three','Four']
 for(var i=0;i<arr.length;i++)
 {

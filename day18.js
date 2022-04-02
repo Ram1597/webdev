@@ -1,6 +1,16 @@
-var fun=(a=0,b=0) => {
-    var sum=a+b
-    return sum
+var list=document.querySelector('ul')
+var button= document.querySelector('button')
+var input= document.querySelector('input')
+var body=document.querySelector('body')
+
+
+const callbackfunc = (event) => {
+   // const inputvalue=input.value
+    const element=document.createElement('li')
+    const textbox=document.createTextNode(input.value)
+    element.appendChild(textbox)
+    list.appendChild(element)
+
 }
 
-console.log(fun(10,20))
+button.addEventListener('click', callbackfunc)
