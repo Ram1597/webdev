@@ -1,7 +1,6 @@
-var c=function (a,b)
-{
+var fun=(a=0,b=0) => {
     var sum=a+b
-    return sum;
+    return sum
 }
 
-console.log(c(10,20))
+console.log(fun(10,20))
