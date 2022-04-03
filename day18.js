@@ -5,6 +5,13 @@ var body=document.querySelector('body')
 
 var chore=[]
 
+var deleteItem=(value)=>{
+        const ind=chore.indexOf(value)
+        chore.splice(ind,1)
+        console.log(chore)
+
+}
+
 const callbackfunc = (event) => {
     
     const inputvalue=input.value
@@ -17,6 +24,7 @@ const callbackfunc = (event) => {
     const textbox=document.createTextNode(input.value)
     element.appendChild(textbox)
     list.appendChild(element)
+    element.addEventListener('click',(e)=>{e.target.remove()})
     }
     
 
