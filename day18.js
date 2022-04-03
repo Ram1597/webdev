@@ -5,9 +5,13 @@ var body=document.querySelector('body')
 
 
 const callbackfunc = (event) => {
-        body.classList.toggle('dark')
+        body.classList.add('dark')
+//    // const inputvalue=input.value
+//     const element=document.createElement('li')
+//     const textbox=document.createTextNode(input.value)
+//     element.appendChild(textbox)
+//     list.appendChild(element)
 
-
-}
+// }
 
 button.addEventListener('click', callbackfunc)
