@@ -1,7 +1,10 @@
 let ch={
         name:"classic",
-        manufacturer:"Mercedes"
+        manufacturer:"Mercedes",
+        print:() =>
+        {
+            console.log(ch.name)
+        }
 }
 
-console.log(ch.name)
-console.log(ch.manufacturer)
+ch.print()
